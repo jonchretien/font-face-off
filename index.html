@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Compare</title>
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <style media="screen">
+    .font-sample > p { font-family: "franklin-110413-1", "nyt-franklin-110413-2"; }
+    .sample1 { font-weight: 400; }
+    .sample2 { font-weight: 500; }
+    .sample3 { font-weight: 600; }
+    .sample4 { font-weight: 700; }
+    .sample5 { font-weight: 800; }
+  </style>
+  <script type="text/javascript" src="//use.typekit.net/izl2axs.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+  <div class="shell">
+    <table id="js-fontSamples" class="font-samples"></table>
+  </div>
+
+  <script src="fontfaceoff.js"></script>
+  <script>
+  window.addEventListener('load', function() {
+    var fontFaceOff = new FontFaceOff('Franklin Bold', 'sample1,sample2,sample3,sample4,sample5');
+  }, false);
+  </script>
+
+</body>
+</html>
